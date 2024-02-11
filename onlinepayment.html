@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- --------------------------------------------header start---------------------------- ------>
     <header class="container-fluid sticky-top p-0">
         <nav class="navbar navbar-expand-md ">
             <a href="" class="navbar-brand ms-5">
@@ -52,95 +53,35 @@
             </div>
         </nav>
     </header>
-    <!-- ------------------------banner1------------------------ -->
-    <section>
-        <div>
-            <img src="assets/banner.webp" class="w-100" alt="">
-        </div>
+    <!-- ------------------------------------------header start-------------------------- ---------->
+    <!-- ----------------------------------commen banner------------------------ -->
+    <section class="container-fluid p-0 aboutus-banner">
+        <!-- <img src="assets/banner2.avif" alt=""> -->
+        <h1>Online Payment</h1>
     </section>
-    <!-- -------------------------banner1 end---------------------- -->
-    <section class="container">
-        <div class="row">
-            <div class="col-12 col-md-12 col-xl-12 justify-content">
-                <h1 class="text-center">Welcome To <span class="text-danger">ELearn InfoTech</span></h1>
-                <p class="">ELearn Infotech is a Realtime Training Company offering Courses on varied IT Technologies
-                    like Fullstack Development, Python, React JS, Node JS, Web Design & PHP with MySQL, Digital
-                    Marketing, Java, UI/UX Designing & Development, Oracle Modules, Angularjs, SAP Modules, Cloud
-                    Computing, Graphic Designing etc. Established in 2016 ELearn Infotech has successfully Trained
-                    upwards of 45,000+ Students. ELearn Infotech offers Excellent Software courses with end to end
-                    support to the candidates. ELearn Infotech is a one stop shop for IT services & Training in
-                    Hyderabad, India.</p>
+    <!-- -----------------------------------commen banner end--------------------- -->
+    <!-- ------------------------------------------Online Payment start-------------------------- -->
+    <section class="container payments">
+        <h1 class="text-center">Online Payment</h1>
+        <form action="finalpage.html" class="payment" onsubmit="return onlinePayment()">
+            <input type="text" id="amount3" class="form-control" placeholder="Amount" aria-label="First name">
+            <p id="payment"></p>
+            <input type="text" id="name3" class="form-control" placeholder="Name" aria-label="First name">
+            <p id="namepayment"></p>
+            <input type="text" id="email3" class="form-control" placeholder="Email" aria-label="Last name">
+            <p id="emailpayment"></p>
+            <input type="text" id="phone3" class="form-control" placeholder="Phone" aria-label="First name">
+            <p id="phonepayment"></p>
+            <textarea class="form-control" placeholder="Message" name="" id="message" cols="30" rows="3"></textarea>
+            <input class="btn btn-danger ms-3" type="submit">
+        </form>
+    </section>
 
-            </div>
-            <div class="col-12 col-md-12 col-xl-12">
-                <img src="assets/w1.webp" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- ---------------------------contact------------------------------------- -->
-    <section class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-xl-8 reg p-5 contact">
-                <div class="contact-bg">
-                    <h1 class="ms-4 mb-5">Contact With Us</h1>
-                    <div class="row m-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Course name" aria-label="First name">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Name" aria-label="Last name">
-                        </div>
-                    </div>
-                    <div class="row m-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Email" aria-label="First name">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Phone" aria-label="Last name">
-                        </div>
-                    </div>
-                    <div class="row m-4">
-                        <textarea class="form-control" placeholder="Message" name="" id="" cols="30"
-                            rows="5"></textarea>
-                    </div>
-                    <input class="btn btn-danger ms-3" type="submit">
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-xl-4 p-3">
-                <h1 class="text-danger">Address</h1>
-                <div class="card mb-2">
-                    <div class="card-body address d-flex">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <div>
-                            <h3 class="text-start">Elearn Infotech</h3>
-                            <p class="text-start">Plot Number 40, Second Floor,</p>
-                            <p class="text-start">Vittal Rao Nagar, </p>
-                            <p class="text-start">Madhapur, Hyderabad, </p>
-                            <p class="text-start">Telangana 500081</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-2">
-                    <div class="card-body address d-flex">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p class="text-start"> +91 8464025086</p>
-                    </div>
-                </div>
-                <div class="card mb-2">
-                    <div class="card-body address d-flex">
-                        <i class="bi bi-envelope-fill"></i>
-                        <p class="text-start"> info@elearninfotech.com</p>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- --------------------------contact end----------------------------------- -->
-    <!-- ----------------------------FAQ--------------------------------------- -->
-    <section class=""></section>
-    <!-- ----------------------------FAQ end----------------------------------- -->
-    <!-- ----------------------------footer------------------------ -->
+
+    <!-- ------------------------------------------Online Payment end---------------------------- -->
+
+    <!-- ------------------------------------------footer start---------------------------- -------->
     <footer class="container-fluid p-5">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
@@ -153,7 +94,7 @@
                 <p>Student Registration</p>
                 <p>Become a trainer</p>
                 <p>New Batch</p>
-                <p><a href="onlinepayment.html">Online Payment</a></p>
+                <p>Online Payment</p>
                 <p>Placements</p>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 px-5">
@@ -171,11 +112,10 @@
                 <p><i class="bi bi-telephone-fill"></i> +91 8464025086</p>
                 <p><i class="bi bi-envelope-fill"></i> info@elearninfotech.com</p>
             </div>
+
         </div>
 
     </footer>
-    <!-- --------------------------------------footer end----------------------------- -->
-    <!-- -------------------------------------bottom-------------------------------- -->
     <section class="container-fluid bottom text-center">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
@@ -191,9 +131,8 @@
         </div>
 
     </section>
-    <!-- --------------------------------------bottom end----------------------------- -->
-
-
+    <!-- --------------------------------------------footer end------------------------------ ------>
+    <!-- ---------------------------------------------icons----------------------------------------->
     <section>
         <div class="icon1 text-center">
             <i class="bi bi-whatsapp"></i>
@@ -224,6 +163,7 @@
             <i class="bi bi-facebook"></i>
         </div>
     </section>
+    <!-- -------------------------------------------------end icons------------------- -->
 </body>
 
 </html>

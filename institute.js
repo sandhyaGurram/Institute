@@ -184,14 +184,143 @@ function bookdemo(){
     let name2=document.getElementById("name2").value;
     const name2Exp=/^[a-zA-Z]+$/;
     let name2Status=false;
+    let email2=document.getElementById("email2").value;
+    const email2Exp=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let email2Status=false;
+    let phone2=document.getElementById("phone2").value;
+    const phone2Exp=/^[0-9]+$/;
+    let phone2Status=false;
+
+
     if (name2===""){
-        document.getElementById("n2").innerHTML="Please enter";
+        document.getElementById("n2").innerHTML="Please enter name";
     }
     else{
-        document.getElementById("n2").innerHTML="";
-        name2Status=true;
+        if(name2.match(name2Exp)){
+            document.getElementById("n2").innerHTML="";
+            name2Status=true;
+        }
+        else{
+            document.getElementById("n2").innerHTML="Enter characters only";
+        }
     }
-    if(name2Status===true){
+
+    if(email2===""){
+        document.getElementById("e2").innerHTML="Please enter email address";
+    }
+    else{
+        if(email2.match(email2Exp)){
+            document.getElementById("e2").innerHTML="";
+            email2Status=true;
+        }
+        else{
+            document.getElementById("e2").innerHTML="Invalid email ex: abcd@gmail.com";
+        }
+    }
+
+    if(phone2===""){
+        document.getElementById("p2").innerHTML="Please enter number";
+    }
+    else{
+        if(phone2.match(phone2Exp)){
+            if(phone2.length===10){
+                document.getElementById("p2").innerHTML="";
+                phone2Status=true;
+            }
+            else{
+                document.getElementById("p2").innerHTML="enter 10 numbers only";
+            }
+        }
+        else{
+            document.getElementById("p2").innerHTML="Please enter digits only";
+        }
+    }
+    if(name2Status===true && email2Status===true && phone2Status===true){
         return true;
     }
+    else{
+        return false;
+    }
+}
+
+// -----------------------------------------payment validation---------------------------------------
+function onlinePayment(){
+    let amount=document.getElementById("amount3").value;
+    let name3=document.getElementById("name3").value;
+    let email3=document.getElementById("email3").value;
+    let phone3=document.getElementById("phone3").value;
+    const amountExp=/^[0-9]+$/;
+    const charExp=/^[a-zA-Z]+$/;
+    const email3Exp=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let amountStatus=false;
+    let name3Status=false;
+    let email3Status=false;
+    let phone3Status=false;
+
+    if (amount===""){
+        document.getElementById("payment").innerHTML="Please enter amount";
+    }
+    else{
+        if(amount.match(amountExp)){
+            document.getElementById("payment").innerHTML="";
+            amountStatus=true;
+        }
+        else{
+            document.getElementById("payment").innerHTML="Please enter only digits";
+        }
+    }
+
+    if (name3===""){
+        document.getElementById("namepayment").innerHTML="Please enter name";
+    }
+    else{
+        if(name3.match(charExp)){
+            document.getElementById("namepayment").innerHTML="";
+            name3Status=true;
+        }
+        else{
+            document.getElementById("namepayment").innerHTML="Please enter only characters";
+        }
+    }
+
+    if (email3===""){
+        document.getElementById("emailpayment").innerHTML="Please enter email";
+    }
+    else{
+        if(email3.match(email3Exp)){
+            document.getElementById("emailpayment").innerHTML="";
+            email3Status=true;
+        }
+        else{
+            document.getElementById("emailpayment").innerHTML="Invalid email ex: abcd@gmail.com";
+        }
+    }
+
+    if (phone3===""){
+        document.getElementById("phonepayment").innerHTML="Please enter number";
+    }
+    else{
+        if(phone3.match(amountExp)){
+            if(phone3.length===10){
+                document.getElementById("phonepayment").innerHTML="";
+                phone3Status=true;
+            }
+            else{
+                document.getElementById("phonepayment").innerHTML="enter 10 digits only";
+            }
+        }
+        else{
+            document.getElementById("phonepayment").innerHTML="Invalid email ex: abcd@gmail.com";
+        }
+    }
+
+
+    if(amountStatus===true && name3Status===true && email3Status===true && phone3Status===true){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+
 }
