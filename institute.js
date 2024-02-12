@@ -11,6 +11,11 @@ function validate() {
     let email = document.getElementById("email").value;
     let nameStatus = false;
     let emailStatus = false;
+    let phone=document.getElementById("phone").value;
+    const phoneExp=/^[0-9]+$/;
+    let phoneStatus=false;
+    // let course=document.getElementById("course").value;
+    
     // ------------------name validation-----------------------------
     if (name === "") {
         document.getElementById("nameNote").innerHTML = "Name can't be empty";
@@ -34,9 +39,34 @@ function validate() {
         emailStatus = true;
     }
 
+    if(phone===""){
+        document.getElementById("phoneNote").innerHTML = "Please enter number";
+    }
+    else{
+        if(phone.match(phoneExp)){
+            if(phone.length===10){
+                document.getElementById("phoneNote").innerHTML = "";
+                phoneStatus=true
+            }
+            else{
+                document.getElementById("phoneNote").innerHTML = " enter 10 numbers only";
+            }
+        }
+        else{
+            document.getElementById("phoneNote").innerHTML = "enter digits";
+        }
+    }
+
+    // if(course===""){
+    //     document.getElementById("courseNote").innerHTML = "Please select course";
+    // }
+    // else{
+    //     document.getElementById("courseNote").innerHTML = "";
+        
+    // }
 
     // -------------------form validation--------------------------
-    if (nameStatus === true && emailStatus === true) {
+    if (nameStatus === true && emailStatus === true && phoneStatus===true ) {
         return true;
     }
     else {
@@ -244,7 +274,7 @@ function bookdemo(){
 }
 
 // -----------------------------------------payment validation---------------------------------------
-function onlinePayment(){
+function onlinepayment(){
     let amount=document.getElementById("amount3").value;
     let name3=document.getElementById("name3").value;
     let email3=document.getElementById("email3").value;
@@ -257,7 +287,7 @@ function onlinePayment(){
     let email3Status=false;
     let phone3Status=false;
 
-    if (amount===""){
+    if(amount===""){
         document.getElementById("payment").innerHTML="Please enter amount";
     }
     else{
@@ -310,12 +340,12 @@ function onlinePayment(){
             }
         }
         else{
-            document.getElementById("phonepayment").innerHTML="Invalid email ex: abcd@gmail.com";
+            document.getElementById("phonepayment").innerHTML="enter only digits";
         }
     }
 
 
-    if(amountStatus===true && name3Status===true && email3Status===true && phone3Status===true){
+    if(amountStatus===true && name3Status===true && email3Status===true && phone3Status===true ){
         return true;
     }
     else{
@@ -324,3 +354,5 @@ function onlinePayment(){
 
 
 }
+
+// ------------------------------------------

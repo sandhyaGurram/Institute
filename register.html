@@ -61,93 +61,39 @@
     <!-- -----------------------------------commen banner end--------------------- -->
     <!-- -----------------------------------------student registration start-------------- -->
 
-    <section class="container contact student">
+    <section class="container ">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-xl-8 text-center p-5 student-form student-bg flex">
-
-                <h1 class="ms-4 mb-5 text-white">Student Registration Form</h1>
-                <div class="row m-3">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Course name" aria-label="First name">
-                    </div>
-                    <div class="col">
-
-                        <select name="" id="" class="form-select">
-                            <option value="" hidden>Training Type </option>
-                            <option value="">Classroom Training</option>
-                            <option value="">Online Training</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row m-3">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Name" aria-label="First name">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
-                    </div>
-                </div>
-                <div class="row m-3">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Phone" aria-label="First name">
-                    </div>
-                    <div class="col">
-                        <select name="" id="" class="form-select">
-                            <option value="" hidden>Interested Courses</option>
-                            <option value="">Python Fullstack</option>
-                            <option value="">MERN Full Stack Developer</option>
-                            <option value="">UI Development</option>
-                            <option value="">React JS</option>
-                            <option value="">UI/UX Designing</option>
-                            <option value="">Node JS</option>
-                            <option value="">Web Designing</option>
-                            <option value="">PHP with MySQL</option>
-                            <option value="">Digital Marketing</option>
-                            <option value="">Python</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row m-4">
-                    <textarea class="form-control" placeholder="Message" name="" id="" cols="30" rows="5"></textarea>
-                </div>
-                <input class="btn btn-danger ms-3" type="submit">
-
-            </div>
-            <!-- <div class="col-12 col-sm-12 col-md-12 col-xl-4 p-3">
-                <img src="assets/registration.webp" alt="">
-            </div> -->
-        </div>
-    </section>
-
-    <!-- -----------------------------------------student registration end-------------- -->
-    <!-- -----------------------------------------Faculty registration start-------------- -->
-
-    <section class="container student">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-xl-8 reg p-5 faculty-form contact">
-                <h1 class="ms-4 mb-5">Faculty Registration Form</h1>
-                <form action="finalpage.html" method="post" onsubmit="return validate()">
+            <div class="col-12 col-sm-12 col-md-12 col-xl-8 text-center p-5 student-form">
+                <form action="">
+                    <h1 class="ms-4 mb-5">Student Registration Form</h1>
                     <div class="row m-3">
                         <div class="col">
-                            <input type="text" id="name" class="form-control" placeholder="Name"
-                                aria-label="First name">
-                            <p id="nameNote" class="text-white"></p>
+                            <input type="text" class="form-control" placeholder="Course name" aria-label="First name">
                         </div>
                         <div class="col">
-                            <input type="text" id="email" class="form-control" placeholder="Email"
-                                aria-label="Last name">
-                            <p id="emailNote" class="text-white"></p>
+
+                            <select name="" id="" class="form-select">
+                                <option value="" hidden>Training Type </option>
+                                <option value="">Classroom Training</option>
+                                <option value="">Online Training</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row m-3">
                         <div class="col">
-                            <input type="text" id="phone" class="form-control" placeholder="Phone"
-                                aria-label="First name">
-
+                            <input type="text" class="form-control" placeholder="Name" aria-label="First name">
                         </div>
                         <div class="col">
-                            <select name="" id="select" class="form-select">
-                                <option value="" hidden>Course Name</option>
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <select name="" id="" class="form-select">
+                                <option value="" hidden>Interested Courses</option>
                                 <option value="">Python Fullstack</option>
                                 <option value="">MERN Full Stack Developer</option>
                                 <option value="">UI Development</option>
@@ -159,30 +105,96 @@
                                 <option value="">Digital Marketing</option>
                                 <option value="">Python</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="row m-4">
+                        <textarea class="form-control" placeholder="Message" name="" id="" cols="30"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="row m-3 text-center px-5">
+                        <div class="col-1">
+                            <input class="form-check-input text-end" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-check-label text-start" for="flexCheckDefault">
+                                Accept Terms & Conditions
+                              </label>
+                        </div>
+                    </div>
+                    
+                    <input class="btn btn-danger ms-3" type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <!-- -----------------------------------------student registration end-------------- -->
+    <!-- -----------------------------------------Faculty registration start-------------- -->
+
+    <section class="container ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-xl-8 text-center p-5 student-form">
+                <h1 class="ms-4 mb-5">Faculty Registration Form</h1>
+                <form  action="finalpage.html" method="post" onsubmit="return validate()">
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" id="name" class="form-control" placeholder="Name">
+                            <p id="nameNote"></p>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="email" class="form-control" placeholder="Email">
+                            <p id="emailNote" ></p>
                         </div>
                     </div>
                     <div class="row m-3">
                         <div class="col">
-                            <input type="text" id="experiance" class="form-control" placeholder="Experiance"
-                                aria-label="First name">
+                            <input type="text" id="phone" class="form-control" placeholder="Phone">
+                            <p id="phoneNote" ></p>
+                        </div>
+                        <div class="col">
+                            <select name="" id="course" class="form-select">
+                                <option value="" >Course Name</option>
+                                <option value="">Python Fullstack</option>
+                                <option value="">MERN Full Stack Developer</option>
+                                <option value="">UI Development</option>
+                                <option value="">React JS</option>
+                                <option value="">UI/UX Designing</option>
+                                <option value="">Node JS</option>
+                                <option value="">Web Designing</option>
+                                <option value="">PHP with MySQL</option>
+                                <option value="">Digital Marketing</option>
+                                <option value="">Python</option>
+                            </select>
+                            <p id="courseNote" ></p>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <input type="text" id="experiance" class="form-control" placeholder="Experiance">
                         </div>
                         <div class="col">
 
-                            <input class="form-control" id="choose-file" type="file" placeholder="Choose File"
-                                aria-label="First name">
+                            <input class="form-control" id="choose-file" type="file" placeholder="Choose File">
                         </div>
                     </div>
                     <div class="row m-4">
                         <textarea class="form-control" placeholder="Message" name="" id="message" cols="30"
                             rows="5"></textarea>
                     </div>
+                    <div class="row m-3 text-center px-5">
+                        <div class="col-1">
+                            <input class="form-check-input text-end" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-check-label text-start" for="flexCheckDefault">
+                                Accept Terms & Conditions
+                              </label>
+                        </div>
+                        <p id="checkNote" ></p>
+                    </div>
                     <input class="btn btn-danger ms-3" type="submit">
             </div>
             </form>
-            <div class="col-12 col-sm-12 col-md-12 col-xl-4 p-3">
-                <img src="assets/registration.webp" alt="">
-            </div>
         </div>
     </section>
 

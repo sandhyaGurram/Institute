@@ -46,9 +46,7 @@ font-family: 'Unbounded', sans-serif; */
 .contact-bg{
     background-color: rgba(43, 165, 226, 0.658);
 }
-.student-bg{
-    background-color: rgba(32, 33, 33, 0.42);
-}
+
 .reg{
     background-color: rgb(2, 1, 48);
     border-radius: 10px;
@@ -108,17 +106,14 @@ footer i{
 .student{
     padding-top: 100px;
 }
-/* .student-form{
-    background-color: blueviolet;
-} */
-.student-form input,.faculty-form input{
-    padding: 15px;
+.student-form{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px rgb(2, 75, 97), -5px -5px 10px rgb(2, 75, 97);;
 }
-.student-form select,.faculty-form select{
-    padding: 15px;
-}
-.faculty-form{
-    background-color: rgb(5, 56, 101);
+.student-form h1{
+    color: rgb(2, 75, 97);
 }
 .icon1, .icon2,.icon3, .icon4, .icon5, .icon6{
     height: 30px;

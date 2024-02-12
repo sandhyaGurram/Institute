@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <script src="institute.js"></script>
     <!-- --------------------------------------------header start---------------------------- ------>
     <header class="container-fluid sticky-top p-0">
         <nav class="navbar navbar-expand-md ">
@@ -63,7 +64,7 @@
     <!-- ------------------------------------------Online Payment start-------------------------- -->
     <section class="container payments">
         <h1 class="text-center">Online Payment</h1>
-        <form action="finalpage.html" class="payment" onsubmit="return onlinePayment()">
+        <form action="finalpage.html" method="post" onsubmit="return onlinepayment()">
             <input type="text" id="amount3" class="form-control" placeholder="Amount" aria-label="First name">
             <p id="payment"></p>
             <input type="text" id="name3" class="form-control" placeholder="Name" aria-label="First name">
@@ -72,8 +73,8 @@
             <p id="emailpayment"></p>
             <input type="text" id="phone3" class="form-control" placeholder="Phone" aria-label="First name">
             <p id="phonepayment"></p>
-            <textarea class="form-control" placeholder="Message" name="" id="message" cols="30" rows="3"></textarea>
-            <input class="btn btn-danger ms-3" type="submit">
+            <textarea class="form-control" placeholder="Message" name="" id="m3" cols="30" rows="3"></textarea>
+            <input class="btn btn-danger ms-3"  type="submit">
         </form>
     </section>
 
