@@ -115,6 +115,12 @@ footer i{
 .student-form h1{
     color: rgb(2, 75, 97);
 }
+.paragraph{
+    border: 1px solid rgb(2, 75, 97);
+    width: 100px;
+    margin: auto;
+    margin-bottom: 3px;
+}
 .icon1, .icon2,.icon3, .icon4, .icon5, .icon6{
     height: 30px;
     width: 35px;

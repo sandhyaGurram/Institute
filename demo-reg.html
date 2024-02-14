@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 
 
 </head>
@@ -140,6 +144,8 @@
     <!-- ----------------------------------what skills you will learn------------------------------ -->
     <section class="container-fluid learn flex">
         <h1 class="text-center">What <span class="text-danger">Skills you will Learn</span></h1>
+        <p class="paragraph"></p>
+        <p class="paragraph mb-5"></p>
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3">
                 <div class="card">
@@ -364,20 +370,20 @@
                 </p>
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
-                        <h1>45000</h1>
+                        <h1 id="count1">45000</h1>
                         <p>+Registrations</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
-                        <h1>45000</h1>
-                        <p>+Registrations</p>
+                        <h1 id="count2">32000</h1>
+                        <p>+Placements</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
-                        <h1>45000</h1>
-                        <p>+Registrations</p>
+                        <h1 id="count3">40</h1>
+                        <p>%Avg sal hike</p>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
-                        <h1>45000</h1>
-                        <p>+Registrations</p>
+                        <h1 id="count4">150</h1>
+                        <p>+Hiring Prtn</p>
                     </div>
                 </div>
             </div>
@@ -386,6 +392,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- -----------------------------------------certificate  end---------------------------------------------- --->
     <!-- -----------------------------------------FAQ's start  ------------------------------------------------- --->
 
@@ -555,6 +563,37 @@
         </div>
     </section>
     <!-- -------------------------------------------------end icons------------------- -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="res/countMe/countMe.min.js"></script>
+
+    <script>
+        $("#count1").countMe(0,1000);
+        $("#count2").countMe(0,0);
+        $("#count3").countMe(0,100);
+        $("#count4").countMe(0,100);
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout:1000,
+            
+            
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

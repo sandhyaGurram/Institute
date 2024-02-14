@@ -14,7 +14,7 @@ function validate() {
     let phone=document.getElementById("phone").value;
     const phoneExp=/^[0-9]+$/;
     let phoneStatus=false;
-    // let course=document.getElementById("course").value;
+    let course=document.getElementById("course").value;
     
     // ------------------name validation-----------------------------
     if (name === "") {
@@ -57,13 +57,13 @@ function validate() {
         }
     }
 
-    // if(course===""){
-    //     document.getElementById("courseNote").innerHTML = "Please select course";
-    // }
-    // else{
-    //     document.getElementById("courseNote").innerHTML = "";
+    if(course===""){
+        document.getElementById("courseNote").innerHTML = "Please select course";
+    }
+    else{
+        document.getElementById("courseNote").innerHTML = "";
         
-    // }
+    }
 
     // -------------------form validation--------------------------
     if (nameStatus === true && emailStatus === true && phoneStatus===true ) {
