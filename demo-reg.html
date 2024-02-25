@@ -17,7 +17,10 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
 
 </head>
 
@@ -86,7 +89,7 @@
     <section class="container-fluid demo-reg1 p-0 text-center">
         <div class="demo1 p-5">
             <h1>Course Overview</h1>
-            <p>Kickstart as a Developer career by mastering the extensive Fullstack Development concepts. Register Today
+            <p class="text-center">Kickstart as a Developer career by mastering the extensive Fullstack Development concepts. Register Today
             </p>
             <div class="row">
                 <div class="col-6 col-lg-3 col-xl-3 overview px-5 ">
@@ -114,10 +117,10 @@
     <!-- ----------------------------------course eligibility start------------------------------------>
     <section class="container-fluid p-5 eligibility">
         <div class="row">
-            <div class="col-4 col-sm-12 col-xl-4 text-end ">
+            <div class="col-12 col-sm-12 col-xl-4 text-center mb-5">
                 <img src="assets/eligibility-check.webp" class="w-50" alt="">
             </div>
-            <div class="col-8 col-sm-12 col-md-12 col-lg-8 col-xl-8 px-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 px-5">
                 <h1 class="text-center">Course <span class="text-danger">Eligibility</span></h1>
                 <div class="row">
                     <div class="col-6">
@@ -147,7 +150,7 @@
         <p class="paragraph"></p>
         <p class="paragraph mb-5"></p>
         <div class="row">
-            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3">
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3 animate__animated animate__fadeIn">
                 <div class="card">
                     <p data-bs-target="#course1" data-bs-toggle="collapse" class="card-text"><i
                             class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
@@ -163,7 +166,7 @@
                     <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3">
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3 animate__animated animate__fadeInDown">
                 <div class="card">
                     <p data-bs-target="#course2" data-bs-toggle="collapse" class="card-text"><i
                             class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
@@ -179,7 +182,7 @@
                     <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3">
+            <div class="col-12 col-sm-12 col-lg-4 col-xl-4 mb-3 animate__animated animate__fadeInLeft">
                 <div class="card">
                     <p data-bs-target="#course3" data-bs-toggle="collapse" class="card-text"><i
                             class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
@@ -206,16 +209,16 @@
 
             <form action="finalpage.html" method="post" onsubmit="return jobdemovalidate()">
                 <div class="row ps-5">
-                    <div class="col-3"> <input type="text" id="name1" class="form-control" placeholder="Name">
+                    <div class="col-sm-8 col-md-3"> <input type="text" id="name1" class="form-control" placeholder="Name">
                         <p id="namejob"></p>
                     </div>
-                    <div class="col-3"> <input type="text" id="email1" class="form-control" placeholder="Email">
+                    <div class="col-sm-8 col-md-3"> <input type="text" id="email1" class="form-control" placeholder="Email">
                         <p id="emailjob"></p>
                     </div>
-                    <div class="col-3"> <input type="text" id="phone1" class="form-control" placeholder="Phone">
+                    <div class="col-sm-8 col-md-3"> <input type="text" id="phone1" class="form-control" placeholder="Phone">
                         <p id="phonejob"></p>
                     </div>
-                    <div class="col-3 "> <input type="submit" class="btn btn-danger px-5"></div>
+                    <div class="col-sm-8 col-md-3 "> <input type="submit" class="btn btn-danger px-5"></div>
                 </div>
             </form>
 
@@ -225,9 +228,9 @@
     <!-- -------------------------------------course content start------------------------------------------- -->
     <section class="container content p-5">
         <div class="row">
-            <div class="col-12 col-sm-12 col-lg-8 col-xl-8 px-5">
+            <div class="col-12 col-sm-12 col-lg-8 col-xl-8 p-5">
                 <h3>Course <span class="text-danger">Content</span></h3>
-                <div class="card mb-1">
+                <div class="card mb-1 animate__animated animate__fadeInDown">
                     <p class="card-text text-start p-2" data-bs-target="#content1" data-bs-toggle="collapse"><i
                             class="fa-solid fa-hand-point-right"></i> MERN Full Stack Developer course</p>
                 </div>
@@ -241,7 +244,7 @@
                     <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
                     <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
                 </div>
-                <div class="card mb-1">
+                <div class="card mb-1 animate__animated animate__fadeInLeft">
                     <p class="card-text text-start p-2" data-bs-target="#content2" data-bs-toggle="collapse"><i
                             class="fa-solid fa-hand-point-right"></i> Python Full Stack Developer course</p>
                 </div>
@@ -255,7 +258,7 @@
                     <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
                     <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
                 </div>
-                <div class="card mb-1">
+                <div class="card mb-1 animate__animated animate__fadeInUp">
                     <p class="card-text text-start p-2" data-bs-target="#content3" data-bs-toggle="collapse"><i
                             class="fa-solid fa-hand-point-right"></i> Java Full Stack Developer course</p>
                 </div>
@@ -269,7 +272,7 @@
                     <p><i class="fa-solid fa-hand-point-right"></i> Redux</p>
                     <p><i class="fa-solid fa-hand-point-right"></i> Express JS</p>
                 </div>
-                <div class="card mb-1">
+                <div class="card mb-1 animate__animated animate__fadeInTopLeft">
                     <p class="card-text text-start p-2" data-bs-target="#content4" data-bs-toggle="collapse"><i
                             class="fa-solid fa-hand-point-right"></i> Other Features</p>
                 </div>
@@ -369,19 +372,19 @@
                     for the Fullstack Development Training Course at ELearn Infotech to shape up your life positively.
                 </p>
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
                         <h1 id="count1">45000</h1>
                         <p>+Registrations</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
                         <h1 id="count2">32000</h1>
                         <p>+Placements</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
                         <h1 id="count3">40</h1>
                         <p>%Avg sal hike</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-2 parts">
+                    <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2 parts">
                         <h1 id="count4">150</h1>
                         <p>+Hiring Prtn</p>
                     </div>
@@ -397,9 +400,9 @@
     <!-- -----------------------------------------certificate  end---------------------------------------------- --->
     <!-- -----------------------------------------FAQ's start  ------------------------------------------------- --->
 
-    <section class="container-fluid questions">
+    <section class="container-fluid questions p-5">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
                 <h3>FAQ's</h3>
                 <div class="card">
                     <p data-bs-target="#qsn1" data-bs-toggle="collapse" class="card-text text-start"><i
@@ -467,11 +470,11 @@
     <!-- -----------------------------------------refer  start---------------------------------------------------- --->
     <section class="container-fluid refer">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 earn">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 earn text-center">
                 <h3>Refer <span class="text-danger">and Earn</span></h3>
                 <p>Refer & Earn is a program that lets you earn a reward for every friend you refer who enrolls for one of our course. Your referred friends save, too, by getting a discount off their course fees (1000 RS). This program is applicable for everyone including our existing student or passed out student.</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5 text-center">
                 <img src="assets/referandearn2.webp"  alt="">
             </div>
         </div>

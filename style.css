@@ -136,32 +136,32 @@ footer i{
 .icon1{
     margin-bottom: 100px;
     z-index: 2;
-    background-color: green;
+    color: green;
 }
 .icon2{
     z-index: 3;
-    margin-bottom: 160px;
-    background-color: rgb(212, 70, 70);
+    margin-bottom: 140px;
+    color: rgb(212, 70, 70);
 }
 .icon3{
     z-index: 4;
-    margin-bottom: 220px;
-    background-color: rgb(14, 95, 218);
+    margin-bottom: 180px;
+    color: rgb(14, 95, 218);
 }
 .icon4{
     z-index: 5;
-    margin-bottom: 280px;
-    background-color: rgb(177, 3, 180);
+    margin-bottom: 220px;
+    color: rgb(177, 3, 180);
 }
 .icon5{
     z-index: 6;
-    margin-bottom: 340px;
-    background-color: rgb(231, 7, 7);
+    margin-bottom: 260px;
+    color: rgb(231, 7, 7);
 }
 .icon6{
     z-index: 7;
-    margin-bottom: 400px;
-    background-color: rgb(8, 60, 173);
+    margin-bottom: 300px;
+    color: rgb(8, 60, 173);
 }
 .demo-reg{
     background-image: url(assets/demo-reg.avif);
@@ -191,6 +191,9 @@ footer i{
   
     
 }
+.demo-reg1 h1{
+    color: rgb(220, 162, 4);
+}
 .demo1{
     background-color: rgba(10, 54, 108, 0.703);
     color: white;
@@ -218,8 +221,9 @@ footer i{
     
 }
 .enroll h6{
-    width: 600px;
-    background-color: rgb(220, 162, 4);
+    width: 60%;
+   
+    background-color: rgb(220, 58, 4);
     margin: auto;
     padding: 10px;
     border-radius: 30px;
@@ -301,7 +305,7 @@ footer i{
 }
 .questions{
     background-color: rgb(236, 240, 243);
-    padding: 50px 200px;
+    margin: auto;
 }
 .questions h3{
     text-align: start;
